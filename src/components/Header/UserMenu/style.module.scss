@@ -1,0 +1,45 @@
+@import "../../../style/vars.scss";
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  &__avatar {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+  }
+  &__arrow {
+    padding: 5px;
+  }
+  &__rhombus {
+    position: absolute;
+    right: 40px;
+    top: -6px;
+  }
+  &__menu_active {
+    width: 134px;
+    padding: 6px;
+    font-size: $fs-s;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    right: 5px;
+    top: 48px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+    & a:hover {
+      color: $bccmain;
+      text-decoration: underline;
+      transition: color ease-in-out 0.1s;
+    }
+  }
+  &__menu {
+    display: none;
+  }
+}

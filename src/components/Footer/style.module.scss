@@ -1,0 +1,29 @@
+@import "../../style/vars.scss";
+
+.container {
+  max-width: $width;
+  min-height: 100%;
+  margin: 0 auto;
+}
+.footer {
+  background-color: $bcchf;
+  &__row {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    &__info{
+      display: flex;
+      gap:40px;
+    }
+  }
+  &__info {
+    font-size: $fs-s;
+    color: $ctitle;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer{
+    display: none;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../../style/vars.scss";
+
+.taskSelect {
+  overflow-y: hidden;
+  transition: height ease-in-out 0.1s;
+  &__active {
+    width: 260px;
+    height: 36px;
+    padding: 9px;
+    background-color: $bcctask;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    & p {
+      font-size: $fs-s;
+      color: $cmaintext;
+    }
+    & img {
+      width: 18px;
+      height: 12.5px;
+      margin-left: 90%;
+      margin-top: 5px;
+      transition: transform ease-in-out 0.1s;
+    }
+  }
+  &__choices {
+    margin-top: 3px;
+    border-radius: 5px;
+  }
+  &__choice {
+    padding: 8px;
+    background-color: $bcctask;
+    color: $cmaintext;
+    font-size: $fs-s;
+    cursor: pointer;
+    transition: background-color ease-in-out 0.1s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover {
+      background-color: $bclistactive;
+    }
+    &:first-child {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+}

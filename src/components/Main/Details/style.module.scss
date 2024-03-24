@@ -1,0 +1,40 @@
+@import "../../../style/vars.scss";
+
+.details {
+  padding: 20px 0;
+  &__content {
+    min-height: 80vh;
+    background-color: #fff;
+    border-radius: 5px;
+    &__up {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    max-width: 80%;
+    padding: 20px;
+    font-weight: $fw;
+    font-size: $fs-m;
+    color: $cmaintext;
+  }
+  &__buttonBlock {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  &__button {
+    &__img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &__changeDescription{
+    width: 100%;
+    padding: 20px;
+    font-weight: $fw;
+    font-size: $fs-s;
+    color: $cmaintext;
+    outline: none;
+  }
+}

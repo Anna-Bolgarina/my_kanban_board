@@ -1,0 +1,41 @@
+@import "../../../style/vars.scss";
+.list {
+  height: fit-content;
+  padding: 12px;
+  background-color: $bclist;
+  border-radius: 10px;
+  &__title {
+    font-size: $fs-s;
+  }
+  &__tasks {
+   width: 260px;
+    margin: 12px 0;
+  }
+  &__textareaTask {
+    width:260px;
+    padding: 4px;
+    resize: none;
+    background-color: $bcctask;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &__button {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__addButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    @include button;
+  }
+  &__submitButton {
+    @include button-submit;
+    & img {
+      display: none;
+    }
+  }
+  &__cancelButton {
+    @include button-cancel;
+  }
+}

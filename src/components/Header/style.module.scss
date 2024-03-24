@@ -1,0 +1,31 @@
+@import "../../style/vars.scss";
+
+.container {
+  max-width: $width;
+  min-height: 100%;
+  margin: 0 auto;
+}
+.header {
+  background-color: $bcchf;
+  &__row {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: $fs-l;
+    color: $ctitle;
+  }
+}
+
+@media (max-width: 340px) {
+  .header {
+    &__row {
+      justify-content: end;
+    }
+    &__title {
+      display: none;
+    }
+  }
+}

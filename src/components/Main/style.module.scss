@@ -1,0 +1,7 @@
+@import"../../style/vars.scss";
+
+.container{
+  max-width: $width;
+  min-height: 100%;
+  margin: 0 auto;
+}

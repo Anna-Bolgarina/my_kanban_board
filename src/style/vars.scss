@@ -1,0 +1,53 @@
+//size
+$width: 1235px;
+$height: 55px;
+
+// font
+$fs-s: 18px;
+$fs-m: 24px;
+$fs-l: 28px;
+$fw: 400;
+
+// color
+$bccmain: #0079bf;
+$bclist: #ebecf0;
+$bclistactive: #dedede;
+$bcchf: #0067a3;
+$ctitle: #ffffff;
+$cmaintext: #000000;
+$ctext: #5e6c84;
+$activc: #130768;
+$bcctask: #ffffff;
+
+//button
+@mixin button {
+  padding: 5px;
+  border-radius: 6px;
+  font-size: $fs-s;
+  color: $ctext;
+  &:hover {
+    background-color: #ffffff;
+    transition: background-color ease-in-out 0.1s;
+  }
+}
+@mixin button-cancel {
+  margin-left: 90%;
+  margin-bottom: 2px;
+  padding: 0 4px;
+  border-radius: 6px;
+  font-size: $fs-s;
+  color: $ctext;
+  background-color: #ffffff;
+}
+
+@mixin button-submit {
+  padding: 5px 20px;
+  border-radius: 6px;
+  font-size: $fs-s;
+  color: #ffffff;
+  background-color: #0079bf;
+  &:hover {
+    background-color: #0067a3;
+    transition: background-color ease-in-out 0.1s;
+  }
+}

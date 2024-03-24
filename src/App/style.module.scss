@@ -1,0 +1,14 @@
+@import "../style/vars.scss";
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $bccmain;
+}
+@media (max-width: 600px) {
+  .App {
+    height: 100%;
+  }
+}
