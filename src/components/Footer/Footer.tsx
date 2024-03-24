@@ -19,8 +19,8 @@ function Footer({ countTasks, countTasksFinished}:Props) {
             </div>
           </div>
           <div className={style.footer__info}>
-            Kanban board by <span>&#60;Name&#62;&#160;,</span>{" "}
-            <span>&#60;Year&#62;</span>
+            Kanban board by <span>Anna Bolgarina,</span>{" "}
+            <span>2024</span>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { Data } from "../../../types";
 import { getData, setData } from "../../../data";
 import changeImg from "../../../img/pen-svgrepo-com.svg";
 import checkMark from "../../../img/checkmark-svgrepo-com.svg";
-import cross from "../../../img/plus-svgrepo-com.svg";
+import close from "../../../img/close-svgrepo-com.svg";
 
 function Details() {
   const res: any = useLoaderData();
@@ -47,7 +47,7 @@ function Details() {
                   alt="add"></img>
               ) : (
                 <img
-                  className={style.details__button__img}
+                  className={style.details__button__img_change}
                   src={changeImg}
                   alt="change"></img>
               )}
@@ -55,7 +55,7 @@ function Details() {
             <Link className={style.details__cancelButton} to="/">
               <img
                 className={style.details__button__img}
-                src={cross}
+                src={close}
                 alt="close"></img>
             </Link>
           </div>

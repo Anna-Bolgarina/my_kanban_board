@@ -8,11 +8,11 @@
     font-size: $fs-s;
   }
   &__tasks {
-   width: 260px;
+    width: 260px;
     margin: 12px 0;
   }
   &__textareaTask {
-    width:260px;
+    width: 260px;
     padding: 4px;
     resize: none;
     background-color: $bcctask;
@@ -37,5 +37,6 @@
   }
   &__cancelButton {
     @include button-cancel;
+   
   }
 }

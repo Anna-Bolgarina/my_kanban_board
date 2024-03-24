@@ -4,6 +4,7 @@ import style from "./style.module.scss";
 import { Task, Data } from "../../../types";
 import { setData, getData, createId } from "../../../data";
 import cross from "../../../img/Vector.svg";
+import close from "../../../img/close-svgrepo-com.svg";
 import { TaskSelect } from "../TaskSelect/TaskSelect";
 
 interface Props {
@@ -95,7 +96,7 @@ function List({
             data-testid={`${mode}-task`}
             to={`details/${mode}/${task.id}`}
             key={task.id}>
-            <textarea  className={style.list__textareaTask}>
+            <textarea className={style.list__textareaTask}>
               {task.title}
             </textarea>
           </Link>
@@ -107,7 +108,7 @@ function List({
               disabled={!abilityAddTask}
               onClick={onClickCancelButton}
               className={style.list__cancelButton}>
-              <img src={cross} alt="cross"></img>
+              <img src={close} alt="close"></img>
             </button>
             <textarea
               data-testid={`${mode}-textarea`}
@@ -122,7 +123,7 @@ function List({
               disabled={!abilityAddTask}
               onClick={onClickCancelButton}
               className={style.list__cancelButton}>
-              <img src={cross} alt="cross"></img>
+              <img src={close} alt="close"></img>
             </button>
             <TaskSelect
               tasks={prevTasks}

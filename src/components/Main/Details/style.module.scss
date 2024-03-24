@@ -27,9 +27,14 @@
     &__img {
       width: 50px;
       height: 50px;
+      &_change {
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
+      }
     }
   }
-  &__changeDescription{
+  &__changeDescription {
     width: 100%;
     padding: 20px;
     font-weight: $fw;
